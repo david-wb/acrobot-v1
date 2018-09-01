@@ -18,5 +18,4 @@ Best average score over 100 consecutive episodes: -92.95
 
 # Video of Trained Policy
 
-![Trained Acrobot Video]()
 [![Trained Acrobot Video](https://drive.google.com/open?id=1VGpMjh4YSv6HKSojXinvg4AZkV1p81MB)](https://drive.google.com/open?id=1VGpMjh4YSv6HKSojXinvg4AZkV1p81MB)

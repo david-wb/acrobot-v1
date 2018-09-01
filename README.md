@@ -18,4 +18,4 @@ Best average score over 100 consecutive episodes: -92.95
 
 # Video of Trained Policy
 
-![](https://drive.google.com/open?id=1VGpMjh4YSv6HKSojXinvg4AZkV1p81MB)
+![trained policy video](https://drive.google.com/open?id=1VGpMjh4YSv6HKSojXinvg4AZkV1p81MB)

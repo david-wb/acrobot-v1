@@ -18,8 +18,9 @@ print('observation space:', env.observation_space)
 print('action space:', env.action_space)
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
 policy = Policy().to(device)
-optimizer = optim.Adam(policy.parameters(), lr=1e-4)
+optimizer = optim.Adam(policy.parameters(), lr=0.001)
 
 def reinforce(n_episodes=5000, max_t=1000, gamma=1.0, print_every=100):
     scores_deque = deque(maxlen=100)
@@ -54,5 +55,5 @@ def reinforce(n_episodes=5000, max_t=1000, gamma=1.0, print_every=100):
             torch.save(policy.state_dict(), 'checkpoint.pth')
             print('Episode {}\tAverage Score: {:.2f}'.format(i_episode, np.mean(scores_deque)))        
     return scores
-    
+
 scores = reinforce()
